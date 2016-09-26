@@ -1,4 +1,9 @@
+
 <section class="hero">
   <h1>This is the NG6 starter</h1>
   <h3>You can find me inside {{ $ctrl.name }}.html</h3>
+
+  <ul>
+    <li ng-repeat="user in vm.usersList" user="user">{{user.name}}</li>
+  </ul>
 </section>

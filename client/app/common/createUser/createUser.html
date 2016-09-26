@@ -1,0 +1,16 @@
+<h2>Add user</h2>
+<form role="form" ng-submit="vm.addUser()">
+  <label for="name">User Name</label>
+  <input id="name" ng-model="vm.user.name" type="text" placeholder="User Name">
+  <br>
+  <label for="photo">User photo</label>
+  <input id="photo" ng-model="vm.user.photo" type="text" placeholder="User Photo">
+  <br>
+  <label for="about">User about</label>
+  <input id="about" ng-model="vm.user.about" type="text" placeholder="User about">
+  <br>
+  <label for="age">User age</label>
+  <input id="age" ng-model="vm.user.age" type="text" placeholder="User age">
+  <br>
+  <button type="submit">Add</button>
+</form>
