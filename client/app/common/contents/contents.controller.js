@@ -6,10 +6,11 @@ class ContentsController {
   }
   $onInit() {
     // this.usersList = this.UsersService.getUsers();
-    this.contentsList = this.ContentsService.getContents;
+    this.contentsList = this.ContentsService.getContents();
+    console.log(this.contentsList);
   }
 }
 
-ContentsController.$inject = ['$http'];
+ContentsController.$inject = ['ContentsService'];
 
 export default ContentsController;
