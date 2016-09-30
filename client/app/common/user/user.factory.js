@@ -1,4 +1,4 @@
-let UserFactory = function () {
+let UserFactory = function ($http) {
   const user = {};
 
   let getUser = () => {
@@ -6,7 +6,7 @@ let UserFactory = function () {
   };
 
   let isSignedIn = () => {
-    return user.isSignedIn; 
+    return user.isSignedIn;
   };
 
   return { getUser, isSignedIn };

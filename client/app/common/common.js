@@ -5,6 +5,8 @@ import User from './user/user';
 import Footer from './footer/footer';
 import Search from './search/search';
 import CreateUser from './createUser/createUser';
+import Contents from './contents/contents';
+
 
 let commonModule = angular.module('app.common', [
   Navbar,
@@ -12,7 +14,8 @@ let commonModule = angular.module('app.common', [
   User,
   Footer,
   Search,
-  CreateUser
+  CreateUser,
+  Contents
 ])
 
 .name;

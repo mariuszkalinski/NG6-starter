@@ -1,19 +1,20 @@
 class SearchController {
-  constructor($state, UsersService) {
+  constructor($state, UsersService, Service) {
     "ngInject";
     this.$state       = $state;
     this.UsersService = UsersService;
-    this.usersList = [];
-    this.search = {};
+    this.Service = Service;
   }
 
   getUsersList(text){
-    console.log(text);
-    console.log(this.UsersService.getUsers(text));
     this.UsersService.getUsers(text);
-
   }
 
+  $onInit() {
+    this.filter = this.Service.filter;
+    this.usersList = [];
+  // this.search = {};
+  }
 }
 
 export default SearchController;
